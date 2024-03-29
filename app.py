@@ -21,6 +21,7 @@ def delete(id):
     todos.delete_one({"_id":ObjectId(id)})
     return redirect(url_for('index'))
 
+
 # mongodb database
 db = client.flask_database
 
